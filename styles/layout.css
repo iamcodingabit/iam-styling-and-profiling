@@ -1,0 +1,10 @@
+body {
+    background: light-dark(var(--bg), var(--bg));
+    color: light-dark(var(--text), var(--text));
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid var(--text);
+}

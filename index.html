@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML5 Kitchen Sink</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/index.css" rel="stylesheet" />
+</head>
+<body>
+    <navbar role="banner">
+        <h1>HTML5 Kitchen Sink</h1>
+        <small>Jump to: <a href="#headings">Headings</a> | <a href="#sections">Sections</a> | <a
+                href="#phrasing">Phrasing</a> | <a href="#palpable">Palpable Content</a> | <a href="#embeds">Embeds</a>
+            | <a href="#forms">Forms</a> | <a href="#tables">Tables</a> </small> <br><br>
+        <p>This section serves as the <code>header</code>.</p>
+    </navbar>
+    <main>
+        <section id="headings">
+            <h3><a href="#headings">#</a> Headings </h3>
+            <p>Elements <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>,
+                <code>h5</code>, <code>h6</code> make up the <em>heading content</em> category.
+            </p>
+            <hgroup>
+                <h1>h1 I am most important.</h1>
+                <h2>h2 Back in my quaint <a href='#'>garden</a></h2>
+                <h3>h3 Jaunty <a href='#'>zinnias</a> vie with flaunting phlox.</h3>
+                <h4>h4 Five or six big jet planes zoomed quickly by the new tower.</h4>
+                <h5>h5 Expect skilled signwriters to use many jazzy, quaint old alphabets effectively.</h5>
+                <h6>h6 Pack my box with five dozen liquor jugs.</h6>
+            </hgroup>
+            <footer>
+                <p>See the <a target="_blank" href="https://www.w3.org/TR/html5/dom.html#heading-content">Heading
+                        Content spec.</a></p>
+                <p>Note: these two paragraphs are contained in a <code>footer</code> element.
+                </p>
+            </footer>
+        </section>
+
+        <hr>
+        <section id="sections">
+            <header>
+                <h3><a href="#sections">#</a> Sections</h3>
+                <p>Elements <code>article</code>, <code>aside</code>, <code>nav</code>,
+                    <code>section</code> make up the <em>sectioning content</em> category.
+                </p>
+                <nav>
+                    <p>These links are contained in a <code>nav</code> element.</p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <article>
+                <p>This paragraph is nested inside an <code>article</code> element. It contains many different,
+                    sometimes useful, <a href="http://www.w3schools.com/tags/">HTML5 elements</a>. Of course there are
+                    classics like <em>emphasis</em>, <strong>strong</strong>,
+                    and <small>small</small> but there are many others as well. Hover the following text for
+                    abbreviation element: <abbr title="abbreviation">abbr</abbr>. You can define <del>deleted text</del>
+                    which often gets replaced with <ins>inserted</ins> text.</p>
+                <p>You can also use <kbd>keyboard text</kbd>, which sometimes is styled similarly to the
+                    <code>&lt;code&gt;</code> or <samp>samp</samp> elements. Even more specifically, there is an element
+                    just for <var>variables</var>. Not to be mistaken with block
+                    quotes below, the quote element lets you denote something as <q>quoted text</q>. Lastly don't forget
+                    the sub (H<sub>2</sub>O) and sup (E = MC<sup>2</sup>) elements.</p>
+                <section>
+                    <p>This paragraph is contained in a <code>section</code> element of its parent <code>article</code>
+                        element.</p>
+                    <p>↓ The following paragraph has the <code>hidden</code> attribute and should not be displayed. ↓
+                    </p>
+                    <p hidden>→ You should not see this paragraph. ←</p>
+                    <p>↑ The previous paragraph should not be displayed. ↑</p>
+                </section>
+            </article>
+            <aside>
+                <p>This is contained in an <code>aside</code> element.</p>
+            </aside>
+            <footer>
+                <p>See the <a target="_blank" href="https://www.w3.org/TR/html5/dom.html#sectioning-content">Sectioning
+                        Content spec.</a></p>
+            </footer>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <p>This section serves as the <code>footer</code>.</p>
+        <p>Find this document on <a href="https://github.com/dbox/html5-kitchen-sink">GitHub</a>.</p>
+    </footer>
+</body>
+
+</html>
