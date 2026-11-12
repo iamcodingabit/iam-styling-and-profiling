@@ -3,6 +3,11 @@ body {
     color: light-dark(var(--text), var(--text));
     display: flex;
     flex-direction: column;
+    
+}
+
+main {
+    padding: 0 var(--space-xs);
 }
 
 .navigation {
@@ -18,7 +23,7 @@ body {
     justify-content: space-evenly;
     list-style-type: none;
     margin: 0;
-    padding: 10px;
+    padding: var(--space-xs);
     text-decoration: none;
 }
 
@@ -26,6 +31,7 @@ body {
     text-decoration:none;
 }
 
-.navigation ul li a:hover{
-    text-decoration:underline;
+a:hover{
+    color: var(--text);
+    transition: color 200ms linear;
 }

@@ -1,11 +1,12 @@
 @import "./header.css";
 @import "./layout.css";
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 :root {
-    --pixel-font: "Pixelify Sans", sans-serif;
+    color-scheme: light dark;
+    font-size: 16px;
+    
+    --pixel-font: "Geist Pixel", sans-serif;
     --body-text-font: "Roboto", sans-serif;
     --bg: hsl(220, 20%, 95%);
     --text: hsl(220, 0%, 20%);
@@ -18,8 +19,12 @@
     --font-2xl: 1.5rem;
     --font-3xl: 2rem;
 
-    color-scheme: light dark;
-    font-size: 16px;
+    --space-xs: 0.5rem;
+    --space-s: 0.75rem;
+    --space-m: 1rem;
+    --space-l: 1.25rem;
+    --space-xl: 1.5rem;
+    
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,9 +37,9 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--body-text-font);
 }
 
-h1 {
-    font-size: var(--font-md)
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--pixel-font);
 }
